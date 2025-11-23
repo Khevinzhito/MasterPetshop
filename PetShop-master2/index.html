@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+
+
+    <link rel="stylesheet" href="style.css">
+    <title>PetShop</title>
+
+
+</head>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto Sass Front-End</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1 class="titulo">Bienvenido a mi Proyecto Sass</h1>
+  </header>
+
+  <main class="contenedor">
+    <section class="card card--primaria">
+      <h2>Sección Principal</h2>
+      <p>Este proyecto usa variables, anidación e interpolación Sass.</p>
+    </section>
+
+    
+
+<body>
+
+    <header>
+        <a href="./index.html"><img src="./img/extra/petshop.svg" alt="logo"></a>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="./carrito.html" class="carrito-icon">
+                        <img src="./img/extra/carrito.svg" alt="Carrito de compra">
+                        <span class="contador">0</span>
+                    </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <div id="ofertas">
+                <h2>Ofertas</h2>
+                <div id="productosOferta">
+                    <button id="btn-izq"> < </button>
+                    <div>
+                        <div class="tarjetaOfertas">
+                            <img src="./img/productos/Ofert1.webp" alt="Producto">
+                            <h3>GATI PESCADO Y SALMON</h3>
+                            <p>10% OFF</p>
+                            <p><strong>$10</strong></p>
+                            <div class="buttonCarritoOfertas">
+                                <button class="addCarrito" data-id="01">Agregar al carrito</button>
+                            </div>
+                        </div>
+                        <div class="tarjetaOfertas">
+                            <img src="./img/productos/Ofert2.webp" alt="Producto">
+                            <h3>EXCELLENT PUPPY</h3>
+                            <p>30% OFF</p>
+                            <p><strong>$15</strong></p>
+                            <div class="buttonCarritoOfertas">
+                                <button class="addCarrito" data-id="02">Agregar al carrito</button>
+                                 </div>
+                        </div>
+                        <div class="tarjetaOfertas">
+                            <img src="./img/productos/6.webp" alt="Producto">
+                            <h3>Ekanuba cahorro</h3>
+                            <p>30% OFF</p>
+                            <p><strong>$30</strong></p>
+                            <div class="buttonCarritoOfertas">
+                                <button class="addCarrito" data-id="02">Agregar al carrito</button>
+                             </div>
+                        </div>
+                             <div class="tarjetaOfertas">
+                            <img src="./img/productos/7.webp" alt="Producto">
+                            <h3>Ken L Adulto Perro</h3>
+                            <p>10% OFF</p>
+                            <p><strong>$10</strong></p>
+                            <div class="buttonCarritoOfertas">
+                                <button class="addCarrito" data-id="02">Agregar al carrito</button>
+                            </div>
+                        </div>
+                        <div class="tarjetaOfertas">
+                            <img src="./img/productos/Ofert3.webp" alt="Producto">
+                            <h3>PRO PLAN PUPPY MEDIANO</h3>
+                            <p>15% OFF</p>
+                            <p><strong>$20</strong></p>
+                            <div class="buttonCarritoOfertas">
+                                <button class="addCarrito" data-id="03">Agregar al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="btn-der"> > </button>
+                </div>
+            </div>
+            <div id="buscador">
+                <h2> Buscador de Productos</h2>
+                <input type="text" id="inputBusqueda">
+                <button id="botonBuscar">Buscar</button>
+                <div id="resultados">
+                    <!-- Aquí se mostrarán los resultados de la búsqueda -->
+                </div>
+            </div>
+        </section>
+
+        <section id="productos">
+
+            <h2>Productos</h2>
+            <div id="fondo-vista-previa"></div>
+            <div id="Vista-previa"></div>
+            <div class = filtro>
+                <div class="filtro_box">
+                <label  for="categoryFilter">Filtrar por categoría:</label>
+                <select id="categoryFilter">
+                    <option value="all">Todas</option>
+                </select>
+                </div>
+            </div>
+            <div class="productos">
+   </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <div class="grid_contactos">
+            </div>
+        </section>
+
+        
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="estilos_redes">
+                        <div>
+                            <img src="img/contacto/ubicacion.png" alt=""><label for="">Direccion: Calle 17 Sur ·22-58 </label>
+                            <p> </p>
+                        </div>
+                        <div>
+                            <img src="img/contacto/telefono.png" alt=""><label for="">Telefono: +57-3014301659</label>
+                            <p> </p>
+                        </div>
+                        <div>
+                            <img src="img/contacto/arroba.png" alt=""><label for="">E-mail: animalplanet@gmail.com</label>
+                            <p> </p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                
+
+
+                <div class="grid_formulario ">
+                    <h2>Dejanos tu consulta</h2>
+                    <form class="estilos_form_contactos" id="form">
+
+                        <div class="input-group">
+                            <label for="nombreInput">Nombre</label>
+                            <input type="text" name="nombre" id="nombreInput" placeholder="Escribe tu nombre">
+
+
+                            <label for="apellidoInput">Apellido</label>
+                            <input type="text" name="apellido" id="apellidoInput" placeholder="Escribe tu Apellido">
+
+                            <label for="emailInput">Email</label>
+                            <input type="email" name="email" id="emailInput" placeholder="Escribe tu email">
+
+
+                            <label for="telefonoInput">N° Telefónico</label>
+                            <input type="text" name="teléfono" id="telefonoInput"
+                                placeholder="Escribe tu N° telefonico">
+                            <div>
+                                <p>Su tipo de consulta es : </p>
+                                <input type="radio" name="consulta" id="default" checked>
+                                <label for="default">Productos</label>
+
+                                <input type="radio" name="consulta" id="veterinariaRadio">
+                                <label for="veterinariaRadio">Veterinaria</label>
+
+                                <input type="radio" name="consulta" id="microchipRadio">
+                                <label for="microchipRadio">MicroChips</label>
+
+                                <input type="radio" name="consulta" id="bañoCorteRadio">
+                                <label for="bañoCorteRadio">Baño y/o Corte</label>
+
+                                <br>
+
+                                <label for="mascotaSelect">Elija su mascota:</label>
+                                <select id="mascotaSelect" aria-label="Mascota">
+                                    <option selected>Mascota</option>
+                                    <option value="1">🐶Perro</option>
+                                    <option value="2">🐱Gato</option>
+                                    <option value="3">🐖Otro</option>
+                                </select>
+                            </div>
+                            <label for="consultaInput">Consulta:</label>
+                            <textarea rows="4" id="consultaInput" name="textoConsulta" aria-label="With textarea"
+                                placeholder="Escriba su consulta aquí"></textarea>
+                        </div>
+                        <div>
+                            <button type="submit">Enviar</button>
+                        </div>
+                        <p class="erroresFormulario" id="errores"></p>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="servicios">
+            <h2>Servicios</h2>
+
+            <div class="grid">
+
+                <div class="tarjeta">
+                    <div class="imagenServicio">
+                        <img src="./img/servicios/veterinaria.png" alt="adopcion">
+                        <div class="textoServicio">
+                            <p>Nuestos médicos veterinarios evalúan, examinan, diagnostican y determinan el tratamiento
+                                para el paciente.</p>
+                        </div>
+                    </div>
+                    <div class="titulo_imagen">
+                        <p>VETERINARIA</p>
+                    </div>
+                </div>
+
+                <div class="tarjeta">
+                    <div class="imagenServicio">
+                        <img src="./img/servicios/peluqueria.png" alt="adopcion">
+                        <div class="textoServicio">
+                            <p>Brindamos todos los cuidados relacionados con la higiene y la estética de las mascotas
+                            </p>
+                        </div>
+                    </div>
+                    <div class="titulo_imagen">
+                        <p>PELUQUERIA</p>
+                    </div>
+                </div>
+
+                <div class="tarjeta">
+                    <div class="imagenServicio">
+                        <img src="./img/servicios/adopcion.png" alt="adopcion">
+                        <div class="textoServicio">
+                            <p>Encuentra tu compañero perfecto en nuestra página de adopción. Juntos, pueden crear
+                                recuerdos inolvidables</p>
+                        </div>
+                    </div>
+                    <div class="titulo_imagen">
+                        <p>ADOPCION</p>
+                    </div>
+                </div>
+
+                <div class="tarjeta">
+                    <div class="imagenServicio">
+                        <img src="./img/servicios/localizador.png" alt="adopcion">
+                        <div class="textoServicio">
+                            <p>¿Tu mascota es parte de tu familia? Mantén a tu compañero peludo seguro y siempre
+                                localizable con nuestro servicio</p>
+                        </div>
+                    </div>
+                    <div class="titulo_imagen">
+                        <p>MICROCHIP</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+   
+
+     
+    </footer>
+    <script src="script.js"></script>
+    <script src="validarForm.js"></script>
+
+
+</body>
+<section class="card card--secundaria">
+      <h2>Otra sección</h2>
+      <p>Creado con ❤️ en la semana de Innovación Tecnológica.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Mi Proyecto Front-End</p>
+  </footer>
+  <script>
+  const abrir = document.getElementById('abrirContacto');
+  const modal = document.getElementById('zonaContacto');
+  const cerrar = document.getElementById('cerrarContacto');
+
+  abrir.addEventListener('click', () => {
+    modal.style.display = 'flex';
+  });
+
+  cerrar.addEventListener('click', () => {
+    modal.style.display = 'none';
+  });
+
+  window.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      modal.style.display = 'none';
+    }
+  });
+</script>
+
+</body>
+<!-- BOTÓN PARA ABRIR CONTACTO -->
+<button id="abrirContacto" class="btn-contacto">📞 Contáctanos</button>
+
+<!-- ZONA DE CONTACTO EMERGENTE -->
+<div id="zonaContacto" class="contacto-modal">
+  <div class="contacto-contenido">
+    <span id="cerrarContacto" class="cerrar">&times;</span>
+    <h2>Contáctanos</h2>
+    <p>Estamos felices de atenderte y cuidar de tus mascotas 🐶🐱</p>
+
+    <form id="formContacto">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" placeholder="Tu nombre" required>
+
+      <label for="correo">Correo electrónico:</label>
+      <input type="email" id="correo" placeholder="Tu correo" required>
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" placeholder="Escribe tu mensaje..." required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+</div>
+
+</html>
+

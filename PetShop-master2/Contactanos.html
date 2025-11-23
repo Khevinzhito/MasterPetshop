@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | PetShop</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff8e1;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #ff9800;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    .contacto-container {
+      max-width: 600px;
+      margin: 50px auto;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 30px;
+    }
+
+    .contacto-container h2 {
+      color: #ff9800;
+      text-align: center;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      resize: none;
+    }
+
+    button {
+      background-color: #ff9800;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #ffb74d;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #ff9800;
+      color: white;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .volver {
+      display: block;
+      margin-top: 15px;
+      text-align: center;
+      text-decoration: none;
+      color: #ff9800;
+      font-weight: bold;
+    }
+
+    .volver:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>📞 Contáctanos</h1>
+  </header>
+
+  <main>
+    <div class="contacto-container">
+      <h2>Estamos felices de atenderte 🐾</h2>
+      <p style="text-align:center;">Déjanos tu mensaje y te responderemos pronto.</p>
+
+      <form id="formContacto">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" placeholder="Tu nombre" required>
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" placeholder="Tu correo" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+        <button type="submit">Enviar mensaje</button>
+      </form>
+
+      <a href="index.html" class="volver">← Volver al inicio</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 PetShop - Todos los derechos reservados</p>
+  </footer>
+
+  <script>
+    document.getElementById('formContacto').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('¡Gracias por contactarnos! 🐾 Tu mensaje ha sido enviado correctamente.');
+      this.reset();
+    });
+  </script>
+
+</body>
+</html>
